@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaming Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #121212;
+            color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff6f61, #d63384);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe082;
+        }
+
+        .hero {
+            background-image: url(pexels-photo-3165335.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #ff6f61;
+        }
+
+        .games-section {
+            padding: 40px 20px;
+        }
+
+        .games-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .games-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .game-item {
+            background-color: #1f1f1f;
+            width: 300px;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .game-item h4 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .game-item p {
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        .game-item button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .game-item button:hover {
+            background-color: #ff6f61;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gaming Hub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Gaming Hub</h2>
+        <p>Discover the latest games, read reviews, and watch trailers.</p>
+        <button>Explore Now</button>
+    </section>
+
+    <section class="games-section" id="games">
+        <h3>Featured Games</h3>
+        <div class="games-list">
+            <div class="game-item">
+                <img src="pexels-photo-14201953.webp" alt="Game 1">
+                <h4>The Legend of Zelda</h4>
+                <p>Exciting gameplay and thrilling adventures await.</p>
+                <button><a href="view1.html">View Details</a></button>
+               
+            </div>
+            <div class="game-item">
+                <img src="46812.jpg" alt="Game 2">
+                <h4>Portal</h4>
+                <p>Step into the world of fantasy and magic.</p>
+                <button><a href="view2.html">View Details</a></button>
+            </div>
+            <div class="game-item">
+                <img src="blade-2560x1440-2560x1440-d4e556fb8166.jpg" alt="Game 3">
+                <h4>Fortnite</h4>
+                <p>Battle your way through epic challenges.</p>
+                <button><a href="view3.html">View Details</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
